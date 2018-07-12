@@ -1,7 +1,8 @@
 instruments
 ===================
+![OpenExecLogo](https://github.com/chuckyin/Instruments/blob/master/logo/OpenExecLogo.PNG)\
+Open-source collecttion repository for shared instruments. This includes things controlled over serial directly and visa through gbip, serial, or usb. This also provides the Python serial library, as many instruments require it, and it is often useful in parallel for talking to devices under test. 
 
-Repository for shared instruments. This includes things controlled over serial directly and visa through gbip, serial, or usb. This also provides the Python serial library, as many instruments require it, and it is often useful in parallel for talking to devices under test. <Edited by Ishaan,2>
 
 Note for OSX/VISA:
 -------------------
@@ -13,13 +14,12 @@ Note for OSX/VISA:
 
 RUNNING TESTS/ GUIDELINES:
 -------------------
-- All code in this repository should be linted BEFORE opening a PR. This can be done by:
-    - Checking out the test_utils (ssh://git@git.corp.squareup.com/hw/test_utils.git) repository to your ~/Development/ Directory
-    - Running: <code>python ../test_utils/pygiene.py . -cfg pygiene.cfg -pep8 ../test_utils/pep8.cfg -pylint ../test_utils/pylint.cfg </code> in the root directory of this repository
+- All code in this repository should be linted BEFORE opening a pull request. Useful information can be found:
+    - https://www.pylint.org/
+    - git@github.com:PyCQA/pylint.git
+    - For example, if the pygiene.cfg and pylint.cfg has been written under test_utils folder. Make Running: <code>python ../test_utils/pygiene.py . -cfg pygiene.cfg -pep8 ../test_utils/pep8.cfg -pylint ../test_utils/pylint.cfg </code> in the root directory of this repository
 - If possible, run the tests/ on any files you may have changed. This is a bit wonky. One needs to run the tests as a module to get around python import from above weirdness:
-    - e.g. dmm test: python -m tests.e34461_dmm_test TCPIP::172.24.1.215
-- If you implement a new driver, please implement a test if at all possible! (come see Cliff for how to Jenkins)
-
+    - e.g. dmm test: python -m tests.e34461_dmm_test TCPIP::176.18.12.213
 
 VISA:
 -------------------

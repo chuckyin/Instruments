@@ -1,6 +1,6 @@
 instruments
 ===================
-![OpenExecLogo](https://github.com/chuckyin/Instruments/blob/master/logo/OpenExecLogo.PNG)\
+![OpenExecLogo](https://github.com/chuckyin/Instruments/blob/master/logo/instrument_logo.PNG)\
 Open-source collecttion repository for shared instruments. This includes things controlled over serial directly and visa through gbip, serial, or usb. This also provides the Python serial library, as many instruments require it, and it is often useful in parallel for talking to devices under test. 
 
 

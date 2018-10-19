@@ -2,7 +2,7 @@
 
 '''NI USB DIO driver
 
-Use NI-USB-6501 to talk to S1 QuickSwipeTest fixture
+Use NI-USB-6501 
 
 '''
 

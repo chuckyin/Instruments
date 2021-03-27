@@ -53,7 +53,6 @@ Serial:
 Note for LitePoint equipments iqNFC and iqXel:
 -------------------
 - Both support SCPI and communicate with ethernet cable.
-- The drivers are stored here: sftp1.corp.squareup.com:/app/factories/home/foxlink1/drivers
 
 Other:
 -------------------
